@@ -1,0 +1,676 @@
+var departamentos={
+    "type":"FeatureCollection",
+    "generator":"JOSM",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Лорето",
+                "name:en":"Department of Loreto",
+                "name:es":"Departamento de Loreto",
+                "is_in:country":"Peru",
+                "gns_uni":"-531652",
+                "gns_classification":"ADM1",
+                "ref":"LOR",
+                "name:uk":"Лорето",
+                "source":"GNS",
+                "name":"Loreto",
+                "name:abbreviation":"LOR",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"891732"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.0,
+                    -5.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Ла-Либертад",
+                "name:en":"Department of La Libertad",
+                "name:es":"Departamento de La Libertad",
+                "is_in:country":"Peru",
+                "gns_uni":"-529734",
+                "gns_classification":"ADM1",
+                "ref":"LAL",
+                "name:uk":"Ла-Лібертад",
+                "source":"GNS",
+                "name":"La Libertad",
+                "name:abbreviation":"LAL",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1617050"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -78.5,
+                    -8.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Паско",
+                "name:en":"Department of Pasco",
+                "name:es":"Departamento de Pasco",
+                "is_in:country":"Peru",
+                "gns_uni":"-537237",
+                "gns_classification":"ADM1",
+                "ref":"PAS",
+                "name:uk":"Паско",
+                "source":"GNS",
+                "name":"Pasco",
+                "name:abbreviation":"PAS",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"280449"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.25,
+                    -10.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Уанкавелика",
+                "name:en":"Department of Huancavelica",
+                "name:es":"Departamento de Huancavelica",
+                "is_in:country":"Peru",
+                "gns_uni":"-526069",
+                "gns_classification":"ADM1",
+                "ref":"HUV",
+                "name:uk":"Уанкавеліка",
+                "source":"GNS",
+                "name":"Huancavelica",
+                "name:abbreviation":"HUV",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"454797"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.0,
+                    -13.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Куско",
+                "name:en":"Department of Cusco",
+                "name:es":"Departamento de Cusco",
+                "is_in:country":"Peru",
+                "gns_uni":"-521838",
+                "gns_classification":"ADM1",
+                "ref":"CUS",
+                "name:uk":"Куско",
+                "source":"GNS",
+                "name":"Cusco",
+                "name:abbreviation":"CUS",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1171403"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -72.5,
+                    -12.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Уануко",
+                "name:en":"Department of Huánuco",
+                "name:es":"Departamento de Huánuco",
+                "is_in:country":"Peru",
+                "gns_uni":"-526223",
+                "gns_classification":"ADM1",
+                "ref":"HUC",
+                "name:uk":"Уануко",
+                "source":"GNS",
+                "name":"Huánuco",
+                "name:abbreviation":"HUC",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"762223"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.833333,
+                    -9.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Анкаш",
+                "name:en":"Department of Ancash",
+                "name:es":"Departamento de Ancash",
+                "is_in:country":"Peru",
+                "gns_uni":"-511728",
+                "short_name":"Ancash",
+                "gns_classification":"ADM1",
+                "ref":"ANC",
+                "name:uk":"Анкаш",
+                "source":"GNS",
+                "name":"Ancash",
+                "name:abbreviation":"ANC",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1063459"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -77.75,
+                    -9.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Мадре-де-Дьос",
+                "name:en":"Department of Madre de Dios",
+                "name:es":"Departamento de Madre de Dios",
+                "is_in:country":"Peru",
+                "gns_uni":"-532321",
+                "gns_classification":"ADM1",
+                "ref":"MDD",
+                "name:uk":"Мадре-де-Дьйос",
+                "source":"GNS",
+                "name":"Madre de Dios",
+                "name:abbreviation":"MDD",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"109555"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.25,
+                    -12.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Аякучо",
+                "name:en":"Department of Ayacucho",
+                "name:es":"Departamento de Ayacucho",
+                "is_in:country":"Peru",
+                "gns_uni":"-512966",
+                "gns_classification":"ADM1",
+                "ref":"AYA",
+                "name:uk":"Аякучо",
+                "source":"GNS",
+                "name":"Ayacucho",
+                "name:abbreviation":"AYA",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"612489"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -74.0,
+                    -14.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Кальяо",
+                "name:en":"Department of Callao",
+                "name:es":"Department del Callao",
+                "is_in:country":"Peru",
+                "gns_uni":"-514697",
+                "gns_classification":"ADM1",
+                "ref":"CAL",
+                "name:uk":"Каяо",
+                "source":"GNS",
+                "name":"Callao",
+                "name:abbreviation":"CAL",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"876877"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -77.15,
+                    -12.066667
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Арекипа",
+                "name:en":"Department of Arequipa",
+                "name:es":"Departamento de Arequipa",
+                "is_in:country":"Peru",
+                "gns_uni":"-512518",
+                "gns_classification":"ADM1",
+                "ref":"ARE",
+                "name:uk":"Арекіпа",
+                "source":"GNS",
+                "name":"Arequipa",
+                "name:abbreviation":"ARE",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1152303"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -72.25,
+                    -16.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Пуно",
+                "name:en":"Department of Puno",
+                "name:es":"Departamento de Puno",
+                "is_in:country":"Peru",
+                "gns_uni":"-539960",
+                "gns_classification":"ADM1",
+                "ref":"PUN",
+                "name:uk":"Пуно",
+                "source":"GNS",
+                "name":"Puno",
+                "name:abbreviation":"PUN",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1268441"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.0,
+                    -15.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Амасонас",
+                "name:en":"Department of Amazonas",
+                "name:es":"Departamento de Amazonas",
+                "is_in:country":"Peru",
+                "gns_uni":"-511559",
+                "gns_classification":"ADM1",
+                "ref":"AMA",
+                "name:uk":"Амазонас",
+                "source":"GNS",
+                "name":"Amazonas",
+                "name:abbreviation":"AMA",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"375993"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -78.0,
+                    -5.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Тумбес",
+                "name:en":"Department of Tumbes",
+                "name:es":"Departamento de Tumbes",
+                "is_in:country":"Peru",
+                "gns_uni":"-547876",
+                "gns_classification":"ADM1",
+                "wikipedia:es":"Departamento de Tumbes",
+                "ref":"TUM",
+                "name:uk":"Тумбес",
+                "admin_level":"4",
+                "source":"GNS",
+                "name:pl":"Region Tumbes",
+                "name":"Tumbes",
+                "wikipedia":"en:Tumbes Region",
+                "name:abbreviation":"TUM",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"200306"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -80.5,
+                    -3.833333
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Ика",
+                "name:en":"Department of Ica",
+                "name:es":"Departamento de Ica",
+                "is_in:country":"Peru",
+                "gns_uni":"-527446",
+                "gns_classification":"ADM1",
+                "ref":"ICA",
+                "name:uk":"Іка",
+                "source":"GNS",
+                "name":"Ica",
+                "name:abbreviation":"ICA",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"711932"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.499722,
+                    -14.3325
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Пьюра",
+                "name:en":"Department of Piura",
+                "name:es":"Departamento de Piura",
+                "is_in:country":"Peru",
+                "gns_uni":"-538502",
+                "gns_classification":"ADM1",
+                "wikipedia:es":"Departamento de Piura",
+                "ref":"PIU",
+                "name:uk":"Піура",
+                "admin_level":"4",
+                "source":"GNS",
+                "name:pl":"Region Piura",
+                "name":"Piura",
+                "wikipedia":"en:Piura Region",
+                "name:abbreviation":"PIU",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1676315"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -80.333333,
+                    -5.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Мокегуа",
+                "name:en":"Department of Moquegua",
+                "name:es":"Departamento de Moquegua",
+                "is_in:country":"Peru",
+                "gns_uni":"-534170",
+                "gns_classification":"ADM1",
+                "ref":"MOQ",
+                "name:uk":"Мокеґуа",
+                "source":"GNS",
+                "name":"Moquegua",
+                "name:abbreviation":"MOQ",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"161533"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.916667,
+                    -16.833333
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Сан-Мартин",
+                "name:en":"Department of San Martín",
+                "name:es":"Departamento de San Martín",
+                "is_in:country":"Peru",
+                "gns_uni":"-543170",
+                "gns_classification":"ADM1",
+                "ref":"SAM",
+                "name:uk":"Сан-Мартін",
+                "source":"GNS",
+                "name":"San Martín",
+                "name:abbreviation":"SAM",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"728808"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -76.833333,
+                    -7.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Ламбаеке",
+                "name:en":"Department of Lambayeque",
+                "wikipedia:ay":"Lampalliqi jach'a suyu",
+                "name:es":"Departamento de Lambayeque",
+                "is_in:country":"Peru",
+                "gns_uni":"-529801",
+                "wikipedia:en":"Lambayeque Region",
+                "short_name":"Lambayeque",
+                "gns_classification":"ADM1",
+                "ref":"LAM",
+                "name:uk":"Ламбаєке",
+                "source":"GNS",
+                "name":"Lambayeque",
+                "wikipedia":"es:Departamento de Lambayeque",
+                "name:abbreviation":"LAM",
+                "wikipedia:qu":"Lampalliqi suyu",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1112868"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -80.0,
+                    -6.333333
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Хунин",
+                "name:en":"Department of Junín",
+                "wikipedia:ay":"Hunin jach'a suyu",
+                "name:es":"Departamento de Junín",
+                "is_in:country":"Peru",
+                "gns_uni":"-528903",
+                "wikipedia:en":"Junín Region",
+                "gns_classification":"ADM1",
+                "ref":"JUN",
+                "name:uk":"Хунін",
+                "source":"GNS",
+                "name":"Junin",
+                "wikipedia":"es:Departamento de Junín",
+                "name:abbreviation":"JUN",
+                "wikipedia:qu":"Sunin suyu",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1232611"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.0,
+                    -11.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Такна",
+                "name:en":"Department of Tacna",
+                "name:es":"Departamento de Tacna",
+                "is_in:country":"Peru",
+                "gns_uni":"-545739",
+                "gns_classification":"ADM1",
+                "ref":"TAC",
+                "name:uk":"Такна",
+                "source":"GNS",
+                "name":"Tacna",
+                "name:abbreviation":"TAC",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"288781"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -70.333333,
+                    -17.666667
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Лима",
+                "name:en":"Department of Lima",
+                "name:es":"Departamento de Lima",
+                "is_in:country":"Peru",
+                "gns_uni":"-530960",
+                "wikipedia:en":"Lima Region",
+                "gns_classification":"ADM1",
+                "ref":"LIM",
+                "name:uk":"Ліма",
+                "source":"GNS",
+                "name":"Lima",
+                "wikipedia":"es:Departamento de Lima",
+                "name:abbreviation":"LIM",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"8445211"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -76.638889,
+                    -12.003889
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Апуримак",
+                "name:en":"Department of Apurímac",
+                "name:es":"Departamento de Apurímac",
+                "is_in:country":"Peru",
+                "gns_uni":"-512339",
+                "gns_classification":"ADM1",
+                "ref":"APU",
+                "name:uk":"Апурімак",
+                "source":"GNS",
+                "name":"Apurímac",
+                "name:abbreviation":"APU",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1063459"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -73.0,
+                    -14.0
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Кахамарка",
+                "name:en":"Department of Cajamarca",
+                "name:es":"Departamento de Cajamarca",
+                "is_in:country":"Peru",
+                "gns_uni":"-514386",
+                "gns_classification":"ADM1",
+                "ref":"CAJ",
+                "name:uk":"Кахамарка",
+                "source":"GNS",
+                "name":"Cajamarca",
+                "name:abbreviation":"CAJ",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"1387809"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -78.833333,
+                    -6.25
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "name:ru":"Укаяли",
+                "name:en":"Department of Ucayali",
+                "name:es":"Departamento de Ucayali",
+                "is_in:country":"Peru",
+                "gns_uni":"-548080",
+                "gns_classification":"ADM1",
+                "ref":"UCA",
+                "name:uk":"Укаялі",
+                "source":"GNS",
+                "name":"Ucayali",
+                "name:abbreviation":"UCA",
+                "place":"state",
+                "is_in:country_code":"PE",
+                "population":"432159"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -73.5,
+                    -9.0
+                ]
+            }
+        }
+    ]
+}

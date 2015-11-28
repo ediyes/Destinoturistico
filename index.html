@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Destinosturísticos</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<script src='regiones.geojson'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+
+<div id='map'></div>
+<script>
+
+for (var i = 0; i < regiones.features.length; i++) {
+    regiones.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="http://ediyes.github.io/Destinosturísticos/foto/areq.jpg"></img>';
+    regiones.features[i].properties["marker-color"]= "#CC0000";
+    regiones.features[i].properties["marker-size"]= "large";
+    regiones.features[i].properties["title"]=regiones.features[i].properties.name;
+
+   if(regiones.features[i].properties.name=="Amazonas"){
+    regiones.features[i].properties["marker-color"]="#F79F81";
+    regiones.features[i].properties["marker-symbol"]="airport"; 
+    regiones.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="http://ediyes.github.io/Destinosturísticos/foto/areq.jpg"></img>';
+    }
+    if(regiones.features[i].properties.name=="Ayacucho"){
+    regiones.features[i].properties["marker-color"]="#F79F81";
+    regiones.features[i].properties["marker-symbol"]="airport"; 
+    regiones.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="http://ediyes.github.io/Destinosturísticos/foto/aya.jpg"></img>';
+    }
+};
+L.mapbox.accessToken = 'pk.eyJ1IjoiZWRpeWVzIiwiYSI6Im5WZElPMjgifQ.J-9jIpcP3KnYZfCtXpj0vg';
+L.mapbox.map('map', 'ediyes.3731f5e5')
+  .setView([45, 30], 2)
+  .featureLayer.setGeoJSON(regiones);
+</script>
+
+</body>
+</html>
