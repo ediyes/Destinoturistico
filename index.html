@@ -5,7 +5,7 @@
 <title>Destinosturísticos</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
-<script src='regiones.geojson'></script>
+<script src='departamentos.geojson'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
@@ -18,27 +18,318 @@
 <div id='map'></div>
 <script>
 
-for (var i = 0; i < regiones.features.length; i++) {
-    regiones.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="foto/areq.jpg"></img>';
-    regiones.features[i].properties["marker-color"]= "#CC0000";
-    regiones.features[i].properties["marker-size"]= "large";
-    regiones.features[i].properties["title"]=regiones.features[i].properties.name;
+for (var i = 0; i < departamentos.features.length; i++) {
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="foto/areq.jpg"></img>';
+    departamentos.features[i].properties["marker-color"]= "#CC0000";
+    departamentos.features[i].properties["marker-size"]= "small";
+    departamentos.features[i].properties["title"]=departamentos.features[i].properties.name;
 
-   if(regiones.features[i].properties.name=="Amazonas"){
-    regiones.features[i].properties["marker-color"]="#F79F81";
-    regiones.features[i].properties["marker-symbol"]="airport"; 
-    regiones.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="foto/areq.jpg"></img>';
+   if(departamentos.features[i].properties.name=="Amazonas"){
+    departamentos.features[i].properties["marker-color"]="#f88d0b";
+    departamentos.features[i].properties["marker-symbol"]="star"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Mausoleos de Revash</li>'+
+  '<li>Kuélap</li>'+
+  '<li>Catarata de Yumbilla</li>'+
+  '<li>Museo Leymebamba</li>'+
+  '<li>Pueblo de los muertos y sarcófagos de Karajía</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/ama.jpg"></img>';
     }
-    if(regiones.features[i].properties.name=="Ayacucho"){
-    regiones.features[i].properties["marker-color"]="#F79F81";
-    regiones.features[i].properties["marker-symbol"]="airport"; 
-    regiones.features[i].properties["description"]= 'Destinos Turísticos: '+ '<img width="200px" src="foto/aya.jpg"></img>';
+    if(departamentos.features[i].properties.name=="Ayacucho"){
+    departamentos.features[i].properties["marker-color"]="#f6f5ef";
+    departamentos.features[i].properties["marker-symbol"]="religious-christian"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>33 Iglesias</li>'+
+  '<li>Complejo arqueológico Wari</li>'+
+  '<li>Pampa Galeras</li>'+
+  '<li>Vilcashuamán</li>'+
+  '<li>Pampa de Ayacucho - Quinua</li>'+
+  '<li>Puyas de Raimondi</li>'+
+  '<li>Mirador Huanta</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/ayac.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Apurímac"){
+    departamentos.features[i].properties["marker-color"]="#12b2dd";
+    departamentos.features[i].properties["marker-symbol"]="star"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Laguna de Pacucha</li>'+
+  '<li>Ruinas de Sondor</li>'+
+  '<li>Bosque de Piedras - Pamachiri</li>'+
+  '<li>Santuario de Cocharcas</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/apur.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Arequipa"){
+    departamentos.features[i].properties["marker-color"]="#419393";
+    departamentos.features[i].properties["marker-symbol"]="monument"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Plaza de Armas Arequipa</li>'+
+  '<li>Cañón de Cotahuasi</li>'+
+  '<li>Mirador de Yanahuara</li>'+
+  '<li>Cañón del Colca</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/areq.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Puno"){
+    departamentos.features[i].properties["marker-color"]="#9ca5bb";
+    departamentos.features[i].properties["marker-symbol"]="swimming"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Lago Titicaca</li>'+
+  '<li>Islas Flotantes de los Uros</li>'+
+  '<li>Chullpas de Sillustani</li>'+
+  '<li>Isla Taquile</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/puno.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Moquegua"){
+    departamentos.features[i].properties["marker-color"]="#f2a9ea";
+    departamentos.features[i].properties["marker-symbol"]="star"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Circuito zona Monumental</li>'+
+  '<li>Casona de las Serpientes</li>'+
+  '<li>Los Geoglifos de Chen Chen</li>'+
+  '<li>Aguas Termales de San Cristobal</li>'+
+  '<li>Complejo Turístico</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/moque.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Tacna"){
+    departamentos.features[i].properties["marker-color"]="#308339";
+    departamentos.features[i].properties["marker-symbol"]="monument"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Monumento a los caídos en el Alto de la Alianza</li>'+
+  '<li>Catedral de Tacna</li>'+
+  '<li>Los Petroglifos de Miculla</li>'+
+  '<li>El Arco Parabólico</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/tacna.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Madre de Dios"){
+    departamentos.features[i].properties["marker-color"]="#c1afc9";
+    departamentos.features[i].properties["marker-symbol"]="garden"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Puerto Maldonado</li>'+
+  '<li>La Reserva Nacional de Tambopata</li>'+
+  '<li>Parque Nacional del Manu</li>'+
+  '<li>Parque Nacional Bahuaja Sonene</li>'+
+  '<li>Lago Sandoval y lago Valencia</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/md.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Cusco"){
+    departamentos.features[i].properties["marker-color"]="#ef6e43";
+    departamentos.features[i].properties["marker-symbol"]="museum"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Korikancha- Templo del Sol</li>'+
+  '<li>Museos en Cusco</li>'+
+  '<li>Templos en Cusco</li>'+
+  '<li>Fortaleza de Sacsayhuaman</li>'+
+  '<li>Qenqo</li>'+
+  '<li>Puca Pucara</li>'+
+  '<li>Tambomachay</li>'+
+  '<li>Ollantaytambo</li>'+
+  '<li>Machupicchu</li>'+
+  '<li>Aguas Calientes</li>'+
+  '<li>Moray</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/cusco.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Ica"){
+    departamentos.features[i].properties["marker-color"]="#c2b509";
+    departamentos.features[i].properties["marker-symbol"]="star-stroked"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Reserva Nacional de Paracas</li>'+
+  '<li>Líneas de Nazca</li>'+
+  '<li>Huacachina</li>'+
+  '<li>Paracas</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/ica.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Huancavelica"){
+    departamentos.features[i].properties["marker-color"]="#35e433";
+    departamentos.features[i].properties["marker-symbol"]="village"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Plaza de Armas</li>'+
+  '<li>Complejo Arqueológico de Inkañan Uchkus</li>'+
+  '<li>Complejo Arqueológico de Huaytará</li>'+
+  '<li>Ruinas de Incahuasi</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/huanca.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Junin"){
+    departamentos.features[i].properties["marker-color"]="#f298ba";
+    departamentos.features[i].properties["marker-symbol"]="museum"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Reserva Nacional de Junín</li>'+
+  '<li>Laguna de Paca</li>'+
+  '<li>Ingenio</li>'+
+  '<li>Parque de la Identidad Huanca</li>'+
+  '<li>La Perla del Mantaro</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/juni.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Huánuco"){
+    departamentos.features[i].properties["marker-color"]="#ebb221";
+    departamentos.features[i].properties["marker-symbol"]="music"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Kotosh o Templo de las Manos Cruzadas</li>'+
+  '<li>Huánuco Pampa</li>'+
+  '<li>Complejo Arqueológico de Garu o Yarowilca</li>'+
+  '<li>Ciudad de Tingo María</li>'+
+  '<li>La Bella Durmiente</li>'+
+  '<li>Parque Nacional de Tingo María</li>'+
+  '<li>La cueva de las lechuzas</li>'+
+  '<li>Cordillera del Huayhuash>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/huan.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Pasco"){
+    departamentos.features[i].properties["marker-color"]="#c62454";
+    departamentos.features[i].properties["marker-symbol"]="monument"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Santuario Nacional de Huayllay</li>'+
+  '<li>Baños Termales de Calera</li>'+
+  '<li>Laguna de Punrún</li>'+
+  '<li>Puente Colgante de Pozuzo</li>'+
+  '<li>El Parque Nacional de Yanachaga – Chemillen.</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/pasco.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Ucayali"){
+    departamentos.features[i].properties["marker-color"]="#0df6f6";
+    departamentos.features[i].properties["marker-symbol"]="monument"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>El Parque Natural </li>'+
+  '<li>Plaza de Armas de Pucallpa </li>'+
+  '<li>La Catedral de Pucallpa </li>'+
+  '<li>La Laguna de Yarinacocha </li>'+
+  '<li>Catarata El Velo de la Novia  </li>'+
+  '<li>El jardín Etno-Botánico Chullachaqui  </li>'+
+  '<li>Catarata La Ducha del Diablo </li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/ucay.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Ancash"){
+    departamentos.features[i].properties["marker-color"]="#a5a22d";
+    departamentos.features[i].properties["marker-symbol"]="star-stroked"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Parque Nacional Huascarán</li>'+
+  '<li>Yungay</li>'+
+  '<li>Cañón del Pato</li>'+
+  '<li>Complejo Arqueológico de Chavin de Huantar</li>'+
+  '<li>Fortaleza de Paramonga</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/anca.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Lima"){
+    departamentos.features[i].properties["marker-color"]="#22cdcd";
+    departamentos.features[i].properties["marker-symbol"]="monument"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Plaza de Armas de Lima</li>'+
+  '<li>Catedral de Lima</li>'+
+  '<li>Puente de los Suspiros</li>'+
+  '<li>Larco Mar</li>'+
+  '<li>Cerro San Cristóbal</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/lima.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Callao"){
+    departamentos.features[i].properties["marker-color"]="#f8c805";
+    departamentos.features[i].properties["marker-symbol"]="swimming"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Centro Histórico del Callao</li>'+
+  '<li>Fortaleza del Real Felipe</li>'+
+  '<li>Visita el Submarino Abtao</li>'+
+  '<li>Balneario Distrito La Punta</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/call.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="La Libertad"){
+    departamentos.features[i].properties["marker-color"]="#f4f2a6";
+    departamentos.features[i].properties["marker-symbol"]="star"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Ruinas de Chan Chan</li>'+
+  '<li>Huacas del Sol y de la Luna</li>'+
+  '<li>Complejo Arqueológico "El Brujo"</li>'+
+  '<li>Los "Caballitos" de Totora.</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/lalib.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="San Martín"){
+    departamentos.features[i].properties["marker-color"]="#308991";
+    departamentos.features[i].properties["marker-symbol"]="star-stroked"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Conjunto Arqueológico del Gran Pajatén</li>'+
+  '<li>Petroglifos de Polish</li>'+
+  '<li>Cuevas de Juancillo</li>'+
+  '<li>Cataratas de Ahuashiyacu</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/sm.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Lambayeque"){
+    departamentos.features[i].properties["marker-color"]="#136a04";
+    departamentos.features[i].properties["marker-symbol"]="park"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Plazuela Elias Aguirre</li>'+
+  '<li>Sipan</li>'+
+  '<li>La cámara funeraria</li>'+
+  '<li>Ucupe</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/lamba.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Cajamarca"){
+    departamentos.features[i].properties["marker-color"]="#6abae2";
+    departamentos.features[i].properties["marker-symbol"]="star-stroked"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>La ciudad de Cajamarca</li>'+
+  '<li>Cuarto de Rescate del Inca Atahualpa</li>'+
+  '<li>Mirador Santa Apolonia</li>'+
+  '<li>Baños del Inca</li>'+
+  '<li>Ventanillas de Otuzco</li>'+
+  '<li>Cumbemayo y los Frailones</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/caja.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Piura"){
+    departamentos.features[i].properties["marker-color"]="#e445aa";
+    departamentos.features[i].properties["marker-symbol"]="star-stroked"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Catacaos</li>'+
+  '<li>Paita</li>'+
+  '<li>Talara</li>'+
+  '<li>Sechura</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/piu.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Tumbes"){
+    departamentos.features[i].properties["marker-color"]="#404ceb";
+    departamentos.features[i].properties["marker-symbol"]="marker-stroked"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Los manglares de Tumbes</li>'+
+  '<li>Puerto Pizarro</li>'+
+  '<li>La Isla del Amor</li>'+
+  '<li>El conjunto arquitectónico Cabeza de Vaca.</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/tum.jpg"></img>';
+    }
+    if(departamentos.features[i].properties.name=="Loreto"){
+    departamentos.features[i].properties["marker-color"]="#15bb27";
+    departamentos.features[i].properties["marker-symbol"]="zoo"; 
+    departamentos.features[i].properties["description"]= 'Destinos Turísticos: ' +'</br>'+
+'<ul>'+
+  '<li>Río Amazonas</li>'+
+  '<li>Reserva Nacional Pacaya - Samiria </li>'+
+  '<li>Reserva Nacional Allpahuayo - Mishana</li>'+
+  '<li>Malecón Tarapacá</li>'+
+'</ul>'+ '<img width="200px" src="http://ediyes.github.io/Destinoturistico/fotos/loret.jpg"></img>';
     }
 };
 L.mapbox.accessToken = 'pk.eyJ1IjoiZWRpeWVzIiwiYSI6Im5WZElPMjgifQ.J-9jIpcP3KnYZfCtXpj0vg';
 L.mapbox.map('map', 'ediyes.3731f5e5')
-  .setView([45, 30], 2)
-  .featureLayer.setGeoJSON(regiones);
+  .setView([-10.5, -72.9], 5)
+  .featureLayer.setGeoJSON(departamentos);
 </script>
 
 </body>
